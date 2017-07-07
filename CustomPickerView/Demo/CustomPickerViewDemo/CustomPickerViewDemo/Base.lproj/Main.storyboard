@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17Y-C4-B72">
+                                <rect key="frame" x="20" y="120" width="157.5" height="30"/>
+                                <state key="normal" title="展示"/>
+                                <connections>
+                                    <action selector="showPickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="meq-Dk-Mce"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB2-Gg-KZa">
+                                <rect key="frame" x="197.5" y="120" width="157.5" height="30"/>
+                                <state key="normal" title="隐藏"/>
+                                <connections>
+                                    <action selector="hidePickerView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVL-ja-o1d"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hB2-Gg-KZa" firstAttribute="height" secondItem="17Y-C4-B72" secondAttribute="height" id="3jg-wK-VmB"/>
+                            <constraint firstItem="hB2-Gg-KZa" firstAttribute="leading" secondItem="17Y-C4-B72" secondAttribute="trailing" constant="20" id="4VA-eY-NsR"/>
+                            <constraint firstItem="hB2-Gg-KZa" firstAttribute="top" secondItem="17Y-C4-B72" secondAttribute="top" id="J5b-87-xqf"/>
+                            <constraint firstItem="hB2-Gg-KZa" firstAttribute="width" secondItem="17Y-C4-B72" secondAttribute="width" id="JQk-Nk-OYE"/>
+                            <constraint firstItem="17Y-C4-B72" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VvB-q7-YNe"/>
+                            <constraint firstAttribute="trailing" secondItem="hB2-Gg-KZa" secondAttribute="trailing" constant="20" id="f7a-Qn-B6V"/>
+                            <constraint firstItem="17Y-C4-B72" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="pIx-uf-t6U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

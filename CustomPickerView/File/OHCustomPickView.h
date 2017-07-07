@@ -2,8 +2,8 @@
 //  OHCustomPickView.h
 //  OurHours
 //
-//  Created by dazhiQi on 2017/6/27.
-//  Copyright © 2017年 Chunhui Du. All rights reserved.
+//  Created by Mr.Qi on 2017/6/27.
+//  Copyright © 2017年 Mr.Qi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
